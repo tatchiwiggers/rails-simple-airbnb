@@ -1,0 +1,16 @@
+<div class="container mt-3">
+    <h1>All our Flats</h1>
+    
+    <p>All <%= @flats.count %>flats.</p>
+
+    <% @flats.each do |flat| %>
+        <h3><%= flat.name %></h3>
+        <p>
+        <%= flat.address %>
+        <%= flat.number_of_guests %>
+        <%= flat.price_per_night %>
+        </p>
+        <%=  %>
+    <% end %>
+
+</div>
