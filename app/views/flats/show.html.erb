@@ -9,6 +9,7 @@
         <% @flat.reviews.each do |review| %>
             <p><%= review.content %></p>
             <p><%= '⭐' * review.rating %></p>
+            <%= link_to  "Delete Review", review_path(review), method: :delete, data: { confirm: 'Are you sure you want to delete your review?' } %>
         <% end %>
     </div>
 

@@ -4,5 +4,5 @@ Rails.application.routes.draw do
   resources :flats, except: [ :index ] do
     resources :reviews, only: [ :new, :create ]
   end
-  resources :reviews, only: [ :delete ]
+  resources :reviews, only: [ :destroy ]
 end
