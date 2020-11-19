@@ -5,6 +5,11 @@
     <div>
         <h3>A bit more about this flat...</h3>
         <p><%= @flat.description %></p>
+        
+        <% @flat.reviews.each do |review| %>
+            <p><%= review.content %></p>
+            <p><%= '⭐' * review.rating %></p>
+        <% end %>
     </div>
 
     <div>
@@ -16,6 +21,6 @@
         <p><%= @flat.number_of_guests %></p>
         <p><%= @flat.price_per_night %></p>
    </div>
-
-    <%= link_to  "back", root_path %>
+    <%= link_to  "Leave a Review", new_flat_review_path(@flat) %> |
+    <%= link_to  "Back", root_path %>
 </div>

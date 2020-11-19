@@ -1,0 +1,10 @@
+<div class="container">
+    <h1>Tells us about your experience!</h1>
+    
+    <%= simple_form_for [ @flat, @review ] do |f| %>
+    <%= f.input :content, label: "Content" %>
+    <%= f.input :rating, collection: 0..5 %>
+    <%= f.submit class: "btn btn-primary" %>
+    <%= link_to  "Cancel", flat_path(@flat), class: 'btn btn-danger' %>
+    <% end %>
+</div>
