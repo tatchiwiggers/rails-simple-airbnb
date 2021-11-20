@@ -29,3 +29,20 @@
   border-top: 1px solid rgba(160,160,160,0.2);
   padding: 16px 24px;
 }
+
+.show-card {
+  background: #eeeeee;
+  padding: 20px;
+  margin: 20px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+}
+
+.flex-align {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  h6 {
+    margin-top: 8px;
+  }
+}

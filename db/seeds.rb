@@ -34,4 +34,13 @@ Flat.create!(
   picture_url: 'https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200'
 )
 
+Flat.create!(
+  name: 'My red house',
+  address: 'Prairie',
+  description: 'It is on a prairie',
+  price_per_night: 2500,
+  number_of_guests: 5,
+  picture_url: 'https://images.unsplash.com/photo-1518780664697-55e3ad937233?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=465&q=80'
+)
+
 puts 'done!'

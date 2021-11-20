@@ -1,0 +1,54 @@
+<div class="banner" style="background-image: url('<%= @flat.picture_url %>')"></div>
+  
+<div class="container">
+  <div class="row">
+    <div class="col-8">
+      <div class="show-card">
+        <h1><%= @flat.name %></h1>
+        <p><%= @flat.address %></p>
+      </div>
+      <div class="show-card">
+        <h3>A little more about this flat...</h3>
+        <p><%= @flat.description %></p>
+      </div>
+    </div>    
+    <div class="col-4">
+      <div class="show-card">
+        <h5>Book this place!</h5>
+          <form action="">
+            <div>
+              <span>From:</span>
+              <input type="text" class="form-control" placeholder="12/12/2021" aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+            <div>
+              <span>To:</span>
+              <input type="text" class="form-control" placeholder="12/01/2022" aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+            <input type="submit" value="book now ;)" class="btn btn-primary mt-2" style="width: 100%">
+          </form>
+        </div>
+      <div class="show-card">
+        <h3>Details</h3>
+          <div>
+            <i class="fas fa-user-friends"> <%= @flat.number_of_guests%></i>
+            <i class="fas fa-dollar-sign ml-3"> <%= @flat.price_per_night %></i>
+          </div>
+      </div>
+      <div class="show-card">
+        <div class="flex-align">
+          <h6>Share</h6>
+          <div class="icons">
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-twitter-square"></i>
+            <i class="fab fa-pinterest-square"></i>
+            <i class="fas fa-envelope-square"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
