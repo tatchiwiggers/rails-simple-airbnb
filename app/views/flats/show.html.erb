@@ -14,18 +14,14 @@
     </div>    
     <div class="col-4">
       <div class="show-card">
-        <h5>Book this place!</h5>
-          <form action="">
-            <div>
-              <span>From:</span>
-              <input type="text" class="form-control" placeholder="12/12/2021" aria-label="Username" aria-describedby="basic-addon1">
-            </div>
-            <div>
-              <span>To:</span>
-              <input type="text" class="form-control" placeholder="12/01/2022" aria-label="Username" aria-describedby="basic-addon1">
-            </div>
-            <input type="submit" value="book now ;)" class="btn btn-primary mt-2" style="width: 100%">
-          </form>
+        <h4>Book this place!</h4>
+          <div class="form-wrapper" style="width: 250px; margin: 0 auto;">
+            <%= simple_form_for :search, method: "get" do |f| %>
+              <%= f.input :starts_at, as: :string, required: false, input_html: {class: "datepicker"} %>
+              <%= f.input :ends_at, as: :string, required: false, input_html: {class: "datepicker"} %>
+              <%= f.button :submit, "Go", class: "btn btn-primary" %>
+            <% end %>
+          </div>
         </div>
       <div class="show-card">
         <h3>Details</h3>
